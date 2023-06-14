@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #174bda;
+    color: #ffffff;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#sobre-a-loja .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sobre-a-loja img {
+    padding-top: 24px;
+    margin-right: 24px;
+    max-width: 420px;
+    width: 100%;
+}
+
+section h2 {
+    color: #0873bb;
+    padding: 16px 0;
+    border-bottom: 1px solid #3c70ff;
+}
+
+#sobre-a-loja p {
+    margin-top: 16px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+
+.produtos img {
+    padding-top: 16px;
+    max-width: 180px;
+    width: 100%;
+}
+
+.produtos p {
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+.produtos h4 {
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.produtos button {
+    display: block;
+    padding: 8px ;
+    border: none;
+    background-color: #0873bb;
+    color: #fff;
+    font: 12px;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 767px) {
+    #sobre-a-loja .container{
+        display: block;
+    }
+
+    .container {
+        max-width:90%
+    }
+
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos img {
+        max-width:100%;
+    }
+
+    .produtos h4,
+    .produtos p {
+        font-size:18px;
+    }
+
+    .produtos button{
+    width:100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width:90%
+    }
+    
+    header nav li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size:24px;
+    }
+
+    #sobre-a-loja .container{
+    display: block;
+    }
+    
+    #sobre-a-loja img {
+        max-width:100%;
+    }
+
+    section h2{
+        font-size:36px;
+    }
+
+    #sobre-a-loja p {
+    font-size:24px;
+    }
+            
+    .produtos {
+        grid-template-columns:repeat(2, 49%)
+    }
+
+    .produtos img {
+        max-width:100%;
+    }
+
+        .produtos h4,
+    .produtos p {
+        font-size:20px;
+    }
+
+    .produtos button{
+    width:100%;
+        font-size:20px;
+    }
+}
